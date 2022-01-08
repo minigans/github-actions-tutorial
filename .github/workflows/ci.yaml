@@ -33,7 +33,7 @@ jobs:
         with:
           token_format: 'access_token'
           workload_identity_provider: 'projects/1069459191638/locations/global/workloadIdentityPools/my-pool/providers/my-provider'
-          service_account: 'minigans@gcpmini-chapter1.iam.gserviceaccount.com'
+          service_account: 'my-service-account@gcpmini-chapter1.iam.gserviceaccount.com'
 
       # Login to Artifact registry
       - name: Docker configuration
