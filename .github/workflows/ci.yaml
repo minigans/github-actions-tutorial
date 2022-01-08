@@ -6,7 +6,7 @@ on:
       - master
 
 env:
-  PROJECT_ID: GCPMini-Chapter1
+  PROJECT_ID: gcpmini-chapter1
   GAR_LOCATION: us-central1
   REPOSITORY: mini-helm-repo
   IMAGE: static-site
