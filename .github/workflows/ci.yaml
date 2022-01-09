@@ -57,3 +57,8 @@ jobs:
       - name: Check for Google Cloud SDK
         run: |-
           gcloud --help | tee
+
+      # Check for Kube access
+      - name: Check for Kube access
+        run: |-
+          kubectl get nodes -o wide --show-labels
