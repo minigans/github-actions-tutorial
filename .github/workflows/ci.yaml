@@ -10,6 +10,7 @@ env:
   GAR_LOCATION: us-central1
   REPOSITORY: mini-helm-repo
   IMAGE: static-site
+  CLUSTER_NAME: minigans1
 
 permissions:
   contents: 'read'
@@ -58,7 +59,10 @@ jobs:
         run: |-
           gcloud --help | tee
 
-      # Check for Kube access
+      # Configure kube and check for Kube access
       - name: Check for Kube access
         run: |-
+          gcloud container clusters get-credentials $CLUSTER_NAME \
+              --region $GAR_LOCATION \
+              --project $PROJECT_ID &&
           kubectl get nodes -o wide --show-labels
