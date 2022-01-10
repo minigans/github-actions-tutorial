@@ -9,7 +9,6 @@
 -- If yes, provide more info; otherwise, mark "N/A" with an optional explanation --
 
 #### Test procedure used to validate
-
 -- Include test steps --
 
 #### Checklist
